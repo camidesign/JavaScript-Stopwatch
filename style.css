@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +37,7 @@
     z-index: -1;
     border-radius: 50%;
     border: 2.5px rgb(206, 206, 206) solid;
-    left: -36%;
+    left: -55px;
     top: -180%;
     animation-name: shine;
     animation-duration: 4s;

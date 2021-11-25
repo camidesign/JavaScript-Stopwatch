@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Apercu", sans-serif;
+}
+
+.container{
+    background: linear-gradient(45deg,#cd46ff, #7500ff);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.wrapper p{
+    position: relative;
+    display: inline-block;
+    color: rgb(244, 223, 255);
+    z-index: 9999;
+    font-size: 48px;
+    margin-bottom: 120px;
+}

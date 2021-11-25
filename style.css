@@ -19,8 +19,61 @@
 .wrapper p{
     position: relative;
     display: inline-block;
-    color: rgb(244, 223, 255);
+    color: rgb(206, 206, 206);
     z-index: 9999;
     font-size: 48px;
     margin-bottom: 120px;
+}
+
+.wrapper p::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 50%;
+    border: 2.5px rgb(206, 206, 206) solid;
+    left: -18%;
+    top: -124%;
+    animation-name: shine;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shine{
+    0%,100%{
+        box-shadow: 0px 0px 12px 5px rgba(255, 7, 135, 0.5);
+    }
+    25%{
+        box-shadow: 0px 0px 12px 5px rgba(120, 181, 255, 0.5);
+    }
+    50%{
+        box-shadow: 0px 0px 12px 5px rgba(246, 255, 120, 0.5);
+    }
+    75%{
+        box-shadow: 0px 0px 12px 5px rgba(255, 174, 54, 0.5);
+    }
+}
+
+button{
+    background-color: transparent;
+    color: rgb(206, 206, 206);
+    padding: 10px 38px;
+    border-radius: 28px;
+    border: 2px solid rgb(206, 206, 206);
+    transition: all .3s ease;
+    outline: 0;
+}
+
+button:not(:last-child){
+    margin-right: 20px;
+}
+
+button:hover, button:focus{
+    animation-name: shine;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    letter-spacing: .12em;
+    border: 2.5px solid rgb(206, 206, 206);
 }

@@ -37,7 +37,7 @@
     z-index: -1;
     border-radius: 50%;
     border: 2.5px rgb(206, 206, 206) solid;
-    left: -55px;
+    left: -40%;
     top: -180%;
     animation-name: shine;
     animation-duration: 4s;
